@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="406.0" prefWidth="634.0" style="-fx-background-color: DEE2E9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Cinema.NormalSeat">
+   <children>
+      <VBox fx:id="vbox" layoutX="34.0" layoutY="65.0" prefHeight="200.0" prefWidth="125.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="48.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" width="26.0" />
+      <Text layoutX="-15.0" layoutY="69.0" rotate="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EXIT" wrappingWidth="55.43292236328125" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f8f8f8" height="49.0" layoutX="347.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" width="26.0" />
+      <Text layoutX="342.0" layoutY="77.0" rotate="-91.1" strokeType="OUTSIDE" strokeWidth="0.0" text="EXIT" wrappingWidth="36.000002548098564" y="-22.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e5d27a" height="55.0" layoutX="48.0" layoutY="293.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="276.0" />
+      <ImageView fitHeight="48.0" fitWidth="63.0" layoutX="102.0" layoutY="298.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/chair1.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="163.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Normal Seat" wrappingWidth="94.55859661102295">
+         <font>
+            <Font size="12.0" />
+         </font></Text>
+      <Label fx:id="normalSeat" layoutX="183.0" layoutY="323.0" text="Label">
+         <font>
+            <Font size="11.0" />
+         </font></Label>
+      <ImageView fitHeight="200.0" fitWidth="34.0" layoutX="168.0" layoutY="-84.0" rotate="90.0">
+         <image>
+            <Image url="@../image/screen.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="reserveNormalBtn" layoutX="480.0" layoutY="360.0" mnemonicParsing="false" onAction="#reserveOnAction" style="-fx-background-color: #daa65d;" text="Reserve" />
+      <Text layoutX="153.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SCREEN">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Rectangle arcWidth="5.0" fill="WHITE" height="337.0" layoutX="376.0" layoutY="11.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" width="252.0" />
+      <ImageView fx:id="homeBtn" fitHeight="43.0" fitWidth="50.0" layoutX="161.0" layoutY="356.0" onMouseClicked="#backHome" onMouseEntered="#setHower" onMouseExited="#setHower">
+         <image>
+            <Image url="@../image/homebtn.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="user" alignment="CENTER_RIGHT" layoutX="495.0" layoutY="24.0" prefHeight="19.0" prefWidth="125.0" />
+      <Label fx:id="titles" layoutX="392.0" layoutY="57.0" prefHeight="17.0" prefWidth="148.0" text="Label" />
+      <Line endX="100.0" layoutX="502.0" layoutY="264.0" startX="-100.0" strokeWidth="2.0" />
+      <Text layoutX="401.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Price" />
+      <Text layoutX="574.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Baht" wrappingWidth="28.999996662139893" />
+      <Label fx:id="totalprice" alignment="CENTER_RIGHT" layoutX="502.0" layoutY="285.0" prefHeight="17.0" prefWidth="63.0" />
+      <Text layoutX="392.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Theater System " wrappingWidth="116.93505859375" />
+      <Label fx:id="systems" alignment="CENTER_RIGHT" layoutX="564.0" layoutY="126.0" prefHeight="17.0" prefWidth="50.0" />
+      <Label fx:id="theaters" layoutX="392.0" layoutY="92.0" prefHeight="17.0" prefWidth="95.0" text="Label" />
+      <Text layoutX="392.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seat" />
+      <Label fx:id="seat" alignment="TOP_RIGHT" layoutX="455.0" layoutY="155.0" prefHeight="49.0" prefWidth="160.0" />
+      <Text layoutX="392.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount Seat" />
+      <Label fx:id="amountSeat" layoutX="574.0" layoutY="215.0" />
+   </children>
+</AnchorPane>

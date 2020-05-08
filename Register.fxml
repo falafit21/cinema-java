@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="315.0" prefWidth="520.0" style="-fx-background-color: F2CBBB;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Cinema.Register">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#daa65d" height="290.0" layoutX="77.0" layoutY="-75.0" rotate="-74.1" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="260.0" />
+      <Text layoutX="22.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register" wrappingWidth="109.73046875">
+         <font>
+            <Font size="73.0" />
+         </font>
+      </Text>
+      <Text layoutX="158.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+      <Text layoutX="430.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age" />
+      <Text layoutX="159.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+      <Text layoutX="135.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+      <Button fx:id="applyBtn" layoutX="435.0" layoutY="262.0" mnemonicParsing="false" onAction="#applyOnAction" style="-fx-background-color: #daa65d;" text="Apply">
+         <font>
+            <Font name="Apple Braille Outline 8 Dot" size="15.0" />
+         </font></Button>
+      <TextField fx:id="name" layoutX="204.0" layoutY="57.0" prefHeight="27.0" prefWidth="216.0" />
+      <TextField fx:id="age" layoutX="464.0" layoutY="57.0" prefHeight="27.0" prefWidth="43.0" />
+      <TextField fx:id="email" layoutX="209.0" layoutY="102.0" />
+      <PasswordField fx:id="confirmpass" layoutX="209.0" layoutY="271.0" />
+      <Text layoutX="142.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
+      <TextField fx:id="username" layoutX="209.0" layoutY="187.0" />
+      <Text layoutX="147.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Birthday" />
+      <DatePicker fx:id="birthdates" layoutX="209.0" layoutY="144.0" />
+      <Text layoutX="85.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm Password" wrappingWidth="115.857421875" />
+      <Label fx:id="warning" layoutX="281.0" layoutY="284.0" prefHeight="17.0" prefWidth="205.0" textFill="#bf5454" />
+      <PasswordField fx:id="pass" layoutX="209.0" layoutY="233.0" />
+      <ImageView fx:id="backBtn" fitHeight="36.0" fitWidth="43.0" layoutX="456.0" layoutY="9.0" onMouseClicked="#closeOnAction">
+         <image>
+            <Image url="@../image/close.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

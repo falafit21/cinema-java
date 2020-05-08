@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="429.0" prefWidth="573.0" style="-fx-background-color: FFF9AA;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Cinema.Video">
+   <children>
+      <ImageView fx:id="close" fitHeight="39.0" fitWidth="44.0" layoutX="509.0" layoutY="14.0" onMouseClicked="#closeAciton">
+         <image>
+            <Image url="@../image/close.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="12.0" layoutY="95.0" prefHeight="313.0" prefWidth="547.0" style="-fx-background-color: #FFF1C3;">
+         <children>
+            <MediaView fx:id="media" fitHeight="300.0" fitWidth="540.0" layoutX="4.0" layoutY="6.0" />
+         </children>
+      </Pane>
+      <Label fx:id="titles" alignment="CENTER" contentDisplay="CENTER" layoutX="89.0" layoutY="30.0" prefHeight="46.0" prefWidth="338.0">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

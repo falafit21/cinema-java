@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="559.0" prefWidth="456.0" style="-fx-background-color: #E1D2A2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Cinema.RecieptConfirm">
+   <children>
+      <Pane layoutX="110.0" layoutY="139.0" prefHeight="406.0" prefWidth="319.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <ImageView fitHeight="115.0" fitWidth="114.0" layoutX="-37.0" layoutY="-43.0">
+               <image>
+                  <Image url="@../image/dollar-coin.png" />
+               </image>
+            </ImageView>
+            <Line endX="180.0" layoutX="153.0" layoutY="-3.0" startX="-100.0" strokeLineCap="ROUND" strokeMiterLimit="7.0" strokeWidth="10.0" />
+            <Label fx:id="user" alignment="CENTER_RIGHT" layoutX="140.0" layoutY="14.0" prefHeight="17.0" prefWidth="107.0" />
+            <Text layoutX="123.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fluffy Cineplex" wrappingWidth="100.2060546875">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="15.0" fitWidth="19.0" layoutX="104.0" layoutY="377.0">
+               <image>
+                  <Image url="@../image/copyright.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="title" alignment="CENTER" layoutX="77.0" layoutY="50.0" prefHeight="17.0" prefWidth="165.0">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="theater" layoutX="20.0" layoutY="98.0" prefHeight="17.0" prefWidth="114.0" />
+            <Label fx:id="system" alignment="CENTER_RIGHT" layoutX="234.0" layoutY="98.0" prefHeight="17.0" prefWidth="56.0" />
+            <Text layoutX="23.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seat Number :" wrappingWidth="131.2060546875" />
+            <Text layoutX="16.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seat Amount" wrappingWidth="100.20605350658298" />
+            <Label fx:id="amount" alignment="CENTER_RIGHT" layoutX="234.0" layoutY="274.0" prefHeight="17.0" prefWidth="56.0" />
+            <Line endX="143.0" layoutX="142.0" layoutY="312.0" startX="-100.0" strokeWidth="2.0" />
+            <Text layoutX="20.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Price" wrappingWidth="93.00000066147186" />
+            <Text layoutX="262.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Baht" />
+            <Label fx:id="price" alignment="CENTER" layoutX="135.0" layoutY="334.0" prefHeight="17.0" prefWidth="93.0" />
+            <ImageView fx:id="quit" fitHeight="34.0" fitWidth="40.0" layoutX="265.0" layoutY="10.0" onMouseClicked="#quitChangeScene">
+               <image>
+                  <Image url="@../image/power.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="seat" layoutX="123.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="RIGHT" wrappingWidth="173.2060546875" />
+         </children>
+      </Pane>
+   </children>
+</Pane>

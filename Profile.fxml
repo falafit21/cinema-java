@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="308.0" prefWidth="420.0" style="-fx-background-color: FFF9AA;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Cinema.Profile">
+   <children>
+      <Circle fill="#daa65d" layoutX="129.0" layoutY="-43.0" radius="250.0" stroke="#ffc55200" strokeType="INSIDE" />
+      <Circle fill="DODGERBLUE" layoutX="333.0" layoutY="91.0" radius="74.0" stroke="#5e5a5a" strokeType="INSIDE" strokeWidth="5.0" />
+      <Text layoutX="20.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phitchayatida ">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <Text layoutX="102.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chimwong">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID : 6110406147">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SEC : 1">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="backBtn" fitHeight="34.0" fitWidth="47.0" layoutX="14.0" layoutY="11.0" onMouseClicked="#backOnAction" onMouseEntered="#setHower" onMouseExited="#setHower">
+         <image>
+            <Image url="@../image/close.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="141.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Software Construction" wrappingWidth="269.0488220285624">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="229.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="01418211">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="156.0" fitWidth="156.0" layoutX="259.0" layoutY="14.0">
+         <image>
+            <Image url="@../image/profilepic(edit).jpg" />
+         </image>
+      </ImageView>
+      <Circle fill="#1f93ff00" layoutX="337.0" layoutY="91.0" radius="78.0" stroke="#5b5555" strokeType="INSIDE" strokeWidth="6.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="606.0" prefWidth="581.0" style="-fx-background-color: FFF9AA;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Cinema.CinemaController">
+    <children>
+      <Circle fill="#daa65d6b" layoutX="78.0" layoutY="42.0" radius="129.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Pane layoutX="-2.0" layoutY="541.0" prefHeight="65.0" prefWidth="583.0" style="-fx-background-color: #F8F8FF;">
+         <children>
+            <ImageView fx:id="logout" fitHeight="46.0" fitWidth="49.0" layoutX="520.0" layoutY="10.0" onMouseClicked="#logout">
+               <image>
+                  <Image url="@../image/logout.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+        <ScrollPane layoutY="126.0" prefHeight="403.0" prefWidth="577.0">
+         <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="963.0" prefWidth="562.0" style="-fx-background-color: FFF9AA;">
+                    <children>
+                  <Pane layoutX="18.0" layoutY="56.0" prefHeight="234.0" prefWidth="151.0" style="-fx-background-color: DEE2E9;">
+                     <children>
+                              <Label fx:id="title1" layoutX="14.0" layoutY="212.0" prefHeight="17.0" prefWidth="120.0" text="Label" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="19.0" layoutY="324.0" prefHeight="234.0" prefWidth="151.0" style="-fx-background-color: DEE2E9;" />
+                  <Pane layoutX="205.0" layoutY="324.0" prefHeight="234.0" prefWidth="151.0" style="-fx-background-color: DEE2E9;" />
+                  <Pane layoutX="394.0" layoutY="324.0" prefHeight="234.0" prefWidth="151.0" style="-fx-background-color: DEE2E9;">
+                     <children>
+                              <Label fx:id="title6" layoutX="10.0" layoutY="210.0" prefHeight="17.0" prefWidth="101.0" text="Label" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="19.0" layoutY="643.0" prefHeight="234.0" prefWidth="151.0" style="-fx-background-color: DEE2E9;">
+                     <children>
+                              <ImageView fx:id="img7" fitHeight="192.0" fitWidth="157.0" layoutX="9.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+
+                              </ImageView>
+                              <Label fx:id="title7" layoutX="8.0" layoutY="210.0" prefHeight="17.0" prefWidth="130.0" text="Label" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="210.0" layoutY="643.0" prefHeight="234.0" prefWidth="151.0" style="-fx-background-color: DEE2E9;">
+                     <children>
+                              <Label fx:id="title8" layoutX="11.0" layoutY="212.0" prefHeight="17.0" prefWidth="130.0" text="Label" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="395.0" layoutY="643.0" prefHeight="234.0" prefWidth="151.0" style="-fx-background-color: DEE2E9;">
+                     <children>
+                              <Label fx:id="title9" layoutX="14.0" layoutY="212.0" prefHeight="17.0" prefWidth="130.0" text="Label" />
+                              <ImageView fx:id="img9" fitHeight="192.0" fitWidth="157.0" layoutX="10.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+
+                              </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="205.0" layoutY="56.0" prefHeight="234.0" prefWidth="151.0" style="-fx-background-color: DEE2E9;">
+                     <children>
+                              <ImageView fx:id="img2" fitHeight="192.0" fitWidth="157.0" layoutX="14.0" layoutY="14.0" onDragEntered="#setHover" onDragExited="#setHover" onMouseClicked="#changeScene" pickOnBounds="true" preserveRatio="true">
+
+                              </ImageView>
+                              <Label fx:id="title2" layoutX="14.0" layoutY="212.0" prefHeight="17.0" prefWidth="127.0" text="Label" />
+                     </children>
+                  </Pane>
+                        <ImageView fx:id="img1" fitHeight="192.0" fitWidth="157.0" layoutX="30.0" layoutY="65.0" onDragEntered="#setHover" onDragExited="#setHover" onMouseClicked="#changeScene" pickOnBounds="true" preserveRatio="true">
+
+                        </ImageView>
+                        <ImageView fx:id="img4" fitHeight="192.0" fitWidth="157.0" layoutX="30.0" layoutY="333.0" onDragEntered="#setHover" onDragExited="#setHover" onMouseClicked="#changeScene" pickOnBounds="true" preserveRatio="true">
+
+                        </ImageView>
+                        <ImageView fx:id="img5" fitHeight="192.0" fitWidth="157.0" layoutX="216.0" layoutY="333.0" onDragEntered="#setHover" onDragExited="#setHover" onMouseClicked="#changeScene" pickOnBounds="true" preserveRatio="true">
+
+                        </ImageView>
+                        <ImageView fx:id="img6" fitHeight="192.0" fitWidth="157.0" layoutX="406.0" layoutY="324.0" onDragEntered="#setHover" onDragExited="#setHover" onMouseClicked="#changeScene" pickOnBounds="true" preserveRatio="true">
+
+                        </ImageView>
+                        <Label fx:id="release1" layoutX="23.0" layoutY="307.0" prefHeight="17.0" prefWidth="90.0" text="Label" />
+                        <Label fx:id="release2" layoutX="207.0" layoutY="307.0" prefHeight="17.0" prefWidth="101.0" text="Label" />
+                        <Label fx:id="release3" layoutX="393.0" layoutY="307.0" prefHeight="17.0" prefWidth="101.0" text="Label" />
+                        <Label fx:id="title5" layoutX="213.0" layoutY="535.0" prefHeight="17.0" prefWidth="101.0" text="Label" />
+                        <Text fill="#5e5e5e" layoutX="20.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Release Date :" />
+                        <Text fill="#7c7c7c" layoutX="205.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Release Date :" />
+                        <Text fill="#908b8b" layoutX="394.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Release Date :" />
+                        <Text fill="#0a0808" layoutX="19.0" layoutY="573.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Release Date :" />
+                        <Text fill="#1e1e1e" layoutX="399.0" layoutY="573.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Release Date :" />
+                        <Text layoutX="206.0" layoutY="573.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Release Date :" />
+                        <Label fx:id="title4" layoutX="34.0" layoutY="535.0" prefHeight="17.0" prefWidth="118.0" text="Label" />
+                        <Label fx:id="release4" layoutX="21.0" layoutY="578.0" prefHeight="17.0" prefWidth="101.0" text="Label" />
+                        <Label fx:id="release5" layoutX="207.0" layoutY="578.0" prefHeight="17.0" prefWidth="101.0" text="Label" />
+                        <Label fx:id="release6" layoutX="399.0" layoutY="578.0" prefHeight="17.0" prefWidth="101.0" text="Label" />
+                        <ImageView fx:id="img8" fitHeight="192.0" fitWidth="157.0" layoutX="221.0" layoutY="653.0" pickOnBounds="true" preserveRatio="true">
+
+                        </ImageView>
+                        <Text fill="WHITE" layoutX="20.0" layoutY="894.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Release Date :" />
+                        <Text layoutX="214.0" layoutY="894.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Release Date :" />
+                        <Text fill="#030303" layoutX="394.0" layoutY="894.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Release Date :" />
+                        <Label fx:id="release7" layoutX="21.0" layoutY="899.0" prefHeight="17.0" prefWidth="101.0" text="Label" />
+                        <Label fx:id="release8" layoutX="213.0" layoutY="899.0" prefHeight="17.0" prefWidth="101.0" text="Label" />
+                        <Label fx:id="release9" layoutX="393.0" layoutY="899.0" prefHeight="17.0" prefWidth="101.0" text="Label" />
+                  <Pane layoutX="395.0" layoutY="56.0" prefHeight="234.0" prefWidth="151.0" style="-fx-background-color: DEE2E9;">
+                     <children>
+                              <ImageView fx:id="img3" fitHeight="192.0" fitWidth="157.0" layoutX="9.0" layoutY="10.0" onDragEntered="#setHover" onDragExited="#setHover" onMouseClicked="#changeScene" pickOnBounds="true" preserveRatio="true">
+
+                              </ImageView>
+                              <Label fx:id="title3" layoutX="14.0" layoutY="212.0" prefHeight="17.0" prefWidth="126.0" text="Label" />
+                     </children>
+                  </Pane>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#89a7c3" height="40.0" layoutX="170.0" layoutY="7.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="210.0" />
+                  <Text layoutX="193.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Now Showing" wrappingWidth="175.5224609375">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#5b5959" layoutX="35.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="..........." wrappingWidth="131.046875">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#5b5959" layoutX="385.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="..........." wrappingWidth="131.046875">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Text>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#89a7c3" height="40.0" layoutX="185.0" layoutY="595.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="210.0" />
+                  <Text layoutX="217.0" layoutY="625.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Up Coming" wrappingWidth="151.00000511482358">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#5b5959" layoutX="58.0" layoutY="617.0" strokeType="OUTSIDE" strokeWidth="0.0" text="..........." wrappingWidth="131.046875">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#5b5959" layoutX="395.0" layoutY="618.0" strokeType="OUTSIDE" strokeWidth="0.0" text="..........." wrappingWidth="131.046875">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Text>
+                    </children>
+                    <effect>
+                        <ColorAdjust />
+                    </effect>
+                </AnchorPane>
+         </content>
+        </ScrollPane>
+        <Text fill="#2f2a2a" layoutX="125.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FLUFFY CINEPLEX" wrappingWidth="352.53955078125">
+            <font>
+                <Font name="Impact" size="53.0" />
+            </font>
+        </Text>
+      <Text layoutX="225.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- Presented By -" wrappingWidth="151.94000244140625">
+         <font>
+            <Font name="Kohinoor Telugu Medium" size="20.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="28.0" fitWidth="34.0" layoutX="533.0" layoutY="14.0">
+         <image>
+            <Image url="@../image/user.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="username" alignment="CENTER_RIGHT" layoutX="405.0" layoutY="20.0" prefHeight="17.0" prefWidth="124.0" text="Label" />
+    </children>
+</AnchorPane>
